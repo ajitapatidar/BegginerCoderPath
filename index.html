@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Started my journey with "Apna College"</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <img src="images/logo.jpg" alt="logo" />
+        <a href="/index.html">Home</a>
+        <a href="/About.html" id="aboutLink">About My Journey</a>
+        <a href="/Lectures.html" id="lecturesLink">Lectures</a>
+        <a href="/My project.html" id="projectsLink">My Project</a>
+        <a href="/Registration.html">Sign UP</a>
+        <a href="/Dashboard.html">Dashboard</a>
+        <a href="/Dashboard.html">Logout</a>
+      </div>
+    </header>
+
+    <main>
+      <h1 id="webname">BeginnerCoderPath❤️</h1>
+      <div class="image-conatiner">
+        <img src="images/apna clg-5.png" alt="banner img" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="section1">
+        <h2>Quick Links</h2>
+        <li><a id="homelink" href="/index.html">Home</a></li>
+        <li><a id="aboutlink" href="/About.html">About My Journey</a></li>
+        <li><a id="lectureslink" href="/Lectures.html">Lectures</a></li>
+        <li><a id="projectslink" href="/My project.html">My project</a></li>
+        <li><a id="signuplink" href="/Registration.html">Sign UP</a></li>
+      </div>
+
+      <div class="section2">
+        <h2>Popular Topics</h2>
+        <li>
+          <a
+            id="htmllink"
+            href="https://youtu.be/HcOc7P5BMi4?si=5Ja7dtAhYb88hUUN"
+            target="_blank"
+            >HTML</a
+          >
+        </li>
+        <li>
+          <a
+            id="csslink"
+            href="https://youtu.be/HcOc7P5BMi4?si=5Ja7dtAhYb88hUUN"
+            target="_blank"
+            >CSS</a
+          >
+        </li>
+        <li>
+          <a
+            id="jslink"
+            href="https://youtu.be/ajdRvxDWH4w?si=x_SFeTNMSnNzMdtJ"
+            target="_blank"
+            >JavaScript Fundamentals</a
+          >
+        </li>
+        <li>
+          <a
+            id="pythonlink"
+            href="https://youtu.be/t2_Q2BRzeEE?si=1IYnSSAska46BCoF"
+            target="_blank"
+            >Python for Beginners</a
+          >
+        </li>
+        <li>
+          <a
+            id="databaselink"
+            href="https://youtu.be/hlGoQC332VM?si=1loEZQYTnuHpzBy4"
+            target="_blank"
+            >Database Essentials</a
+          >
+        </li>
+      </div>
+    </footer>
+    <br />
+
+    <footer id="endfoot">
+      <h4>Contact Information:</h4>
+      For more details, visit the official website of Apna College for contact
+      information.
+      <a href="https://www.apnacollege.in/">WWW.AC.com</a>
+
+      <p id="mess">
+        #“Your coding journey starts here ...with ❤️ from BeginnerCodePath”
+      </p>
+
+      <p>Copyright @2024 BeginnerCodePath. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Function to check login status and restrict access
+      function checkAccess(event) {
+        // Check if the user is logged in
+        const isLoggedIn = localStorage.getItem("is_logged_in");
+
+        // If the user is not logged in, prevent access and show an alert
+        if (!isLoggedIn) {
+          event.preventDefault(); // Prevent default link behavior
+          alert("Please sign up or log in to access this page.");
+          window.location.href = "index.html"; // Redirect to sign-in page
+        }
+      }
+
+      // Add event listeners for navbar links
+      document.addEventListener("DOMContentLoaded", function () {
+        // List of navbar links to restrict
+        const navbarLinks = ["lecturesLink", "projectsLink", "aboutLink"];
+
+        // Add event listeners for each navbar link
+        navbarLinks.forEach((linkId) => {
+          const link = document.getElementById(linkId);
+          if (link) {
+            link.addEventListener("click", (event) => checkAccess(event));
+          }
+        });
+
+        // List of footer links to restrict
+        const footerLinks = [
+          "homelink",
+          "aboutlink",
+          "lectureslink",
+          "projectslink",
+          "signuplink",
+          "htmllink",
+          "csslink",
+          "jslink",
+          "pythonlink",
+          "databaselink",
+        ];
+
+        // Add event listeners for each footer link
+        footerLinks.forEach((linkId) => {
+          const link = document.getElementById(linkId);
+          if (link) {
+            link.addEventListener("click", (event) => checkAccess(event));
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

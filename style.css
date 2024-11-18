@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+}
+
+.mainslider img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 230vh;
+}
+
+#bt2 {
+  margin-top: 3%;
+}
+img {
+  height: 60%;
+  width: 100%;
+}
+
+.Register {
+  height: 400px;
+  width: 400px;
+  background-color: lightgrey;
+  margin: auto;
+  margin-top: 7%;
+  border-radius: 9%;
+}
+
+.body1 {
+  background-color: black;
+}
+
+form {
+  padding-left: 15%;
+  padding-top: 10%;
+  font-size: large;
+}
+
+button {
+  margin-left: 30%;
+  font-size: larger;
+  border: 2px solid black;
+}
+
+#mail {
+  margin-left: 9%;
+}
+
+#Pass {
+  padding-left: 1%;
+}
+
+.Login form {
+  height: 200px;
+  width: 300px;
+  background-color: lightgray;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+.body2 {
+  background-color: black;
+}
+
+#tableform {
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  height: 660px;
+  width: 450px;
+  border: 3px solid black;
+  background-color: whitesmoke;
+}
+
+#body3 {
+  background-color: black;
+}
+table {
+  border: 2px solid black;
+  height: 550px;
+  width: 450px;
+}
+h2 {
+  padding-left: 40%;
+}
+th {
+  border: 2px solid black;
+}
+td {
+  border: 2px solid black;
+}
+a {
+  color: black;
+}
+
+#head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  text-decoration: underline;
+}
+
+#body1 {
+  background-color: lightgray;
+}
+
+p {
+  margin-top: 2%;
+}
+
+#hone {
+  margin-left: 37%;
+  text-decoration: underline;
+  font-family: cursive;
+}
+h3 {
+  text-decoration: underline;
+  font-family: cursive;
+}
+
+.clone h3 {
+  margin-left: 35%;
+  text-decoration: underline;
+  font-family: cursive;
+}
+.clone a {
+  margin-left: 35%;
+}
+#body2 {
+  background-color: #e5d9f2;
+}
+
+footer {
+  height: 160px;
+  background-color: lightgray;
+  margin-top: 40%;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: auto;
+}
+
+footer a {
+  color: black;
+}
+
+.section1 h2 {
+  white-space: nowrap;
+  padding: 10px;
+  padding-bottom: 15%;
+}
+.section2 h2 {
+  white-space: nowrap;
+  padding: 10px;
+  padding-bottom: 15%;
+}
+
+#endfoot {
+  height: 150%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#endfoot p {
+  margin-right: 16%;
+  margin-left: 15%;
+}
+#endfoot h4 {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+#mess {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+#endfoot a {
+  font-style: bold;
+}
+
+#webname {
+  text-align: center;
+  animation: splitline 9s linear infinite;
+}
+
+@keyframes splitline {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.nav img {
+  height: 90%;
+  width: 6%;
+}
+
+.purpose a {
+  color: black;
+  margin-left: 45%;
+  font-size: larger;
+  font-family: cursive;
+}
+
+#details {
+  background-color: white;
+}
+
+#img2 {
+  height: 60%;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.backto{
+  font-family: cursive;
+  font-weight: bold;
+  font-size: large;
+}
+
+#Back{
+  color: whitesmoke;
+}
